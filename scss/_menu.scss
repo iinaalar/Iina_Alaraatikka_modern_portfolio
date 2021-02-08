@@ -5,8 +5,8 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  //@include easeOut; erikseen, koska tämä ei toimi!
-  transition: all 0.5s ease-out;
+  @include easeOut;
+  //transition: all 0.5s ease-out;
 
   .btn-line {
     //Muokataan viivoja menu-buttonin sisällä
@@ -15,7 +15,7 @@
     margin: 0 0 5px 0;
     background: #fff;
     //@include easeOut; erikseen, koska tämä ei toimi!
-    transition: all 0.5s ease-out;
+    @include easeOut;
   }
 
   //Rotate In To X With Menu Lines
@@ -69,10 +69,10 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($color: #444, $amount: 5);
+    background: darken($primary-color, $amount: 5);
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all 0.5s ease-out; //easeout ei toimi!!
+    @include easeOut;
 
     &.show {
       //slide in from top
@@ -82,9 +82,9 @@
 
   //Branding side
   &-branding {
-    background: #444;
+    background: $primary-color;
     transform: translate3d(0, 100%, 0);
-    transition: all 0.5s ease-out; //easeout ei toimi!!
+    @include easeOut;
 
     &.show {
       //slide in from bottom
@@ -96,13 +96,13 @@
       height: 250px;
       background: url(kuva.jpg);
       border-radius: 50%;
-      border: solid 3px #eece1a;
+      border: solid 3px $secondary-color;
     }
   }
 
   .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all 0.5s ease-out; //easeout ei toimi!!
+    @include easeOut;
 
     &.show {
       //slide in from right
@@ -111,7 +111,7 @@
 
     &.current > a {
       //inside an "current"
-      color: #eece1a;
+      color: $secondary-color;
     }
   }
 
@@ -124,10 +124,10 @@
     font-weight: 300;
     color: #fff;
     text-decoration: none;
-    transition: all 0.5s ease-out; //easeout ei toimi!!
+    @include easeOut;
 
     &:hover {
-      color: #eece1a;
+      color: $secondary-color;
     }
   }
 }
