@@ -44,6 +44,19 @@
       height: 150px;
     }
   }
+
+  .about-info {
+    grid-template-areas:
+    //tällä saa ne alueet jotka haluaa, muokattua; nyt alekkain
+
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+
+    grid-template-columns: 1fr;
+  }
 }
 
 //Smartphones
