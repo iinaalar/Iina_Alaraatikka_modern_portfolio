@@ -288,6 +288,12 @@ main {
       height: 150px; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr; }
+  .education {
+    grid-template-areas: "bioimage" "bio" "job1" "job2";
+    grid-template-columns: 1fr; }
+  .work-history {
+    grid-template-areas: "job1" "job2" "job3" "bio";
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
