@@ -161,7 +161,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimg bio bio" "job1 job2 job3";
+  grid-template-areas: "bio bio bio" "job1 job2 job3";
   grid-template-areas: repeat(3, 1fr); }
   .about-info .bio-img {
     border-radius: 50%;
@@ -287,7 +287,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: "bio" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .education {
     grid-template-areas: "bioimage" "bio" "job1" "job2";
@@ -298,4 +298,13 @@ main {
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+  .about-info {
+    grid-template-areas: "bio" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr; }
+  .education {
+    grid-template-areas: "bioimage" "bio" "job1" "job2";
+    grid-template-columns: 1fr; }
+  .work-history {
+    grid-template-areas: "job1" "job2" "job3" "bio";
+    grid-template-columns: 1fr; } }
