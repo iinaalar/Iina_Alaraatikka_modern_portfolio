@@ -81,8 +81,8 @@ main {
   grid-gap: 30px;
   //visual representation
   grid-template-areas:
-    "bioimage bio bio"
-    "job1 job2 job3";
+    "bioimg job1 job2"
+    "bio job3 job4";
   grid-template-areas: repeat(3, 1fr);
 
   .bio.image {
@@ -100,9 +100,13 @@ main {
   }
   .job-2 {
     grid-area: job2;
+    //margin-right: 20vh;
   }
   .job-3 {
     grid-area: job3;
+  }
+  .job-4 {
+    grid-area: job4;
   }
 
   .job {
@@ -117,19 +121,16 @@ main {
   grid-gap: 30px;
   //visual representation
   grid-template-areas:
-    "bio bio bio"
-    "job1 job2 job3";
+    "job1 job2 job3"
+    "bio bio bio";
   grid-template-areas: repeat(3, 1fr);
+  margin-top: 10vh;
 
   .bio.image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
-  }
-  .bio {
-    grid-area: bio;
-    font-size: 1.5rem;
   }
   .job-1 {
     grid-area: job1;
@@ -145,6 +146,14 @@ main {
     background: lighten($primary-color, $amount: 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+    font-size: 1.2rem;
+    h3 {
+      color: $secondary-color;
+    }
+  }
+  .bio {
+    grid-area: bio;
+    font-size: 1.5rem;
   }
 }
 
