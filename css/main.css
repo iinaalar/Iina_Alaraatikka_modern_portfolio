@@ -55,9 +55,7 @@
     .menu-branding .portrait {
       width: 400px;
       height: 400px;
-      background: url(kuva.jpg);
-      border-radius: 50%;
-      border: solid 3px #eece1a; }
+      background: url(kuva.jpg); }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -163,11 +161,9 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimg job1 job2" "bio job3 job4";
+  grid-template-areas: "bioimg bio bio" "job1 job2 job3";
   grid-template-areas: repeat(3, 1fr); }
-  .about-info .bio.image {
-    grid-area: bioimage;
-    margin: auto;
+  .about-info .bio-img {
     border-radius: 50%;
     border: #eece1a 3px solid; }
   .about-info .bio {
@@ -185,6 +181,30 @@ main {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid; }
+
+.education {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bio-image job1" "bio job2";
+  grid-template-areas: repeat(3, 1fr);
+  margin-top: 10vh; }
+  .education .bio-image {
+    border-radius: 50%;
+    border: #eece1a 3px solid; }
+  .education .job-1 {
+    grid-area: job1; }
+  .education .job-2 {
+    grid-area: job2; }
+  .education .job {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: #eece1a 5px solid;
+    font-size: 1.5rem; }
+    .education .job h3 {
+      color: #eece1a; }
+  .education .bio {
+    grid-area: bio;
+    font-size: 1.5rem; }
 
 .work-history {
   display: grid;
