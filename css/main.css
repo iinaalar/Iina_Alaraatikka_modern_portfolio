@@ -55,7 +55,8 @@
     .menu-branding .portrait {
       width: 400px;
       height: 400px;
-      background: url(kuva.jpg); }
+      background: url(kuva.jpg);
+      border: solid 3px #eece1a; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -185,12 +186,9 @@ main {
 .education {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bio-image job1" "bio job2";
+  grid-template-areas: "bio job1" "bio job2";
   grid-template-areas: repeat(3, 1fr);
   margin-top: 10vh; }
-  .education .bio-image {
-    border-radius: 50%;
-    border: #eece1a 3px solid; }
   .education .job-1 {
     grid-area: job1; }
   .education .job-2 {
@@ -240,12 +238,15 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 1rem; }
+  margin-top: 5rem; }
+  .boxes .bio-image {
+    border-radius: 50%;
+    border: #eece1a 3px solid; }
   .boxes div {
     font-size: 2rem;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
