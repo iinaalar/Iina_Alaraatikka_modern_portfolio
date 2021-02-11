@@ -312,11 +312,16 @@ main {
     div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
   .about-info {
+    word-wrap: break-word;
     grid-template-areas: "lg-heading" "sm-heading" "bio" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .education {
+    word-wrap: break-word;
     grid-template-areas: "bioimage" "bio" "job1" "job2";
     grid-template-columns: 1fr; }
   .work-history {
+    word-wrap: break-word;
     grid-template-areas: "job1" "job2" "job3" "bio";
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .education {
+    word-wrap: break-word; } }
